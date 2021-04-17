@@ -2,11 +2,14 @@
   --profile-pic-outer-size: 160px;
   --profile-pic-img-size: 150px;
   --yellow: #fabe28;
+  --yellow-light: #fbe2a4;
   --gray-dark: #565656;
+  --gray-border: #d3d3d3;
   --gray-light: #eeeeee;
   --common-text-light: #727272;
   --heading-title: #818181;
   --border-color: #cecece;
+  --slider-back-color: #efefef;
 }
 * {
   box-sizing: border-box;
@@ -142,4 +145,52 @@ ul {
 }
 .margin-rem {
   margin: 0;
+}
+.skill-title {
+  font-size: 1.7rem;
+  max-width: 300px;
+  text-align: center;
+}
+.skill-container {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  max-width: 300px;
+}
+.slider-container {
+  background-image: linear-gradient(
+    to right,
+    var(--yellow) 50%,
+    var(--yellow-light) 50%
+  );
+  display: flex;
+  height: 8px;
+  position: relative;
+  margin-left: 10px;
+  width: 200px;
+}
+.slider-white {
+  background-color: var(--slider-back-color);
+  height: 8px;
+  position: absolute;
+  right: 0px;
+}
+.slider-ball {
+  background-color: var(--slider-back-color);
+  border: 1px solid var(--gray-border);
+  bottom:-5px;
+  border-radius: 50%;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+.slider-w-40 {
+  width: 40px;
+}
+.slider-w-70 {
+  width: 70px;
+}
+.slider-b-40 {
+  right: 40px;
 }
