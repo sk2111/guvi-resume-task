@@ -26,11 +26,11 @@ body {
 }
 .header-container {
   background-color: var(--gray-dark);
-  height: 24%;
+  height: 220px;
   padding-top: 20px;
 }
 .profile-pic-container {
-  border: 3px dotted var(--yellow);
+  border: 3px dashed var(--yellow);
   border-radius: 50%;
   height: var(--profile-pic-outer-size);
   margin: auto;
@@ -101,7 +101,7 @@ body {
   display: flex;
 }
 .detail-border-container {
-  border: 3px dotted var(--yellow);
+  border: 3px dashed var(--yellow);
   border-radius: 50%;
   height: 60px;
   width: 60px;
