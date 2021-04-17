@@ -1,0 +1,76 @@
+:root {
+  --profile-pic-outer-size: 160px;
+  --profile-pic-img-size: 150px;
+  --yellow: #fabe28;
+  --gray-dark: #565656;
+  --gray-light: #eeeeee;
+  --common-text-light: #494949;
+  --border-color: #cecece;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto";
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.resume-container {
+  height: 100%;
+  width: 100%;
+}
+.header-container {
+  background-color: var(--gray-dark);
+  height: 24%;
+  padding-top: 20px;
+}
+.profile-pic-container {
+  border: 3px dotted var(--yellow);
+  border-radius: 50%;
+  height: var(--profile-pic-outer-size);
+  margin: auto;
+  padding: 2px;
+  position: relative;
+  width: var(--profile-pic-outer-size);
+}
+.profile-pic {
+  border-radius: 50%;
+  height: var(--profile-pic-img-size);
+  width: var(--profile-pic-img-size);
+}
+.profile-name {
+  background-color: var(--yellow);
+  border-radius: 3px;
+  font-size: 5.5rem;
+  font-weight: 400;
+  height: 70px;
+  left: calc(50% - 250px);
+  letter-spacing: 1px;
+  margin: auto;
+  padding: 4px 0px;
+  position: absolute;
+  text-align: center;
+  top: 115px;
+  width: 500px;
+  z-index: 1;
+}
+.gray-rect {
+  background-color: var(--gray-light);
+  height: 30px;
+  position: relative;
+  bottom: 20px;
+}
+.contact-container {
+  border-bottom: 2px solid var(--border-color);
+  padding: 10px 0px 5px 0px;
+  text-align: center;
+}
+.contact-address {
+  color: var(--common-text-light);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
