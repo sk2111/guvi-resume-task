@@ -86,12 +86,14 @@ body {
 .left-section {
   border-right: 1px solid var(--border-color);
   padding-right: 30px;
+  min-width: 370px;
+  margin: 0 auto 0 auto;
   width: 50%;
-  /* min-width: 500px; */
 }
 .right-section {
-  border-left: 1px solid var(--border-color);
   padding-left: 30px;
+  min-width: 370px;
+  margin: 0 auto 0 auto;
   width: 50%;
 }
 .per-cen {
@@ -215,4 +217,38 @@ ul {
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+/* media queries */
+@media screen and (max-width: 836px) {
+  .left-section,
+  .right-section {
+    padding: 0px;
+    border: none;
+  }
+  .skill-container p {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 45%;
+  }
+  .profile-name {
+    padding-top: 12px;
+    left: calc(50% - 150px);
+    width: 300px;
+  }
+  .skill-container p {
+    width: 110px;
+  }
+  .details-container {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .left-section,
+  .right-section {
+    min-width: 310px;
+  }
 }
